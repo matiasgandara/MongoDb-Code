@@ -9,11 +9,11 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tudai</groupId>
-	<artifactId>Integrador4</artifactId>
+	<groupId>edu.tudai</groupId>
+	<artifactId>MongoDb</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Integrador4</name>
-	<description>Demo project for Spring Boot</description>
+	<name>MongoDb</name>
+	<description>Proyecto final Seminario MongoDb</description>
 
 	<properties>
 		<java.version>11</java.version>
