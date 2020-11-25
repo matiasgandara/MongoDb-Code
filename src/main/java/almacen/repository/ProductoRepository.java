@@ -41,7 +41,7 @@ public interface ProductoRepository extends MongoRepository<Producto,String> {
      * @param stock
      * @return Lista productos cuyo stock es menor o igual que el valor pasado por parametro
      */
-    @Query("{stock: ?0}")
+    @Query("{stock: {lte ?0}}")
     public List<Producto> findAllLessThanOrEqualStock(Integer stock);
     
 	
