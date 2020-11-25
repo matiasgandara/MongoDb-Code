@@ -12,7 +12,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Getter @Setter
-@Document(collection = "producto")
+@Document(collection = "productos")
 public class Producto {
 
 	@Id

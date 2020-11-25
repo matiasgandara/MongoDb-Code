@@ -15,7 +15,7 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Getter @Setter
-@Document(collection = "carrito")
+@Document(collection = "ventas")
 public class Carrito {
 	
 	@Id
