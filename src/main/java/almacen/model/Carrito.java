@@ -20,9 +20,9 @@ public class Carrito {
 	
 	@Id
 	private String id;
-	private List<String> productos;
+	private List<Producto> productos;
 	private Date fecha;
 	private String direccion;
-	private float precio;
+	private Float precio;
 	
 }

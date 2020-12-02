@@ -28,9 +28,14 @@ public class ProductoController {
 		this.repository = repository;
 	}
 
-	@GetMapping("/")
+	@GetMapping
 	public Iterable<Producto> getProductos() {
 		return repository.findAll();
+	}
+	
+	@PostMapping
+	public Producto newProducto(@RequestBody Producto p) {
+		return repository.save(p);
 	}
 	
 	@GetMapping("/{id}")
@@ -38,10 +43,6 @@ public class ProductoController {
 		return repository.findById(id);
 	}
 
-	@PostMapping("/")
-	public Producto newProducto(@RequestBody Producto p) {
-		return repository.save(p);
-	}
 
 	@PutMapping("/{id}")
 	Producto replaceProducto(@RequestBody Producto newProducto, @PathVariable String id) {

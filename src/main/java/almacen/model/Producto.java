@@ -19,7 +19,7 @@ public class Producto {
 	private String id;
 	private String nombre;
 	private String descripcion;
-	private float costo;
+	private Float costo;
 	private Integer stock;
 	
 
