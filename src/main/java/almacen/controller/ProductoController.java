@@ -49,6 +49,7 @@ public class ProductoController {
 
 		return repository.findById(id).map(producto -> {
 			producto.setNombre(newProducto.getNombre());
+			producto.setDescripcion(newProducto.getDescripcion());
 			producto.setCosto(newProducto.getCosto());
 			producto.setStock(newProducto.getStock());
 			return repository.save(producto);
@@ -67,11 +68,6 @@ public class ProductoController {
 	 * SECCION DE SERVICIOS ADICIONALES 
 	 * que nos parecieron útiles para agregar
 	 */
-	@GetMapping("/nombre/{nombre}")
-	public Iterable<Producto> getProductosByName(@PathVariable String nombre) {
-		return repository.findAllByName(nombre);
-	}
-
 	@GetMapping("/costo/gt{costo}")
 	public Iterable<Producto> getProductosGreaterThanCosto(@PathVariable float costo) {
 		return repository.findAllGreaterThanCosto(costo);

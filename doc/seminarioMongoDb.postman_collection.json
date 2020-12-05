@@ -1,0 +1,225 @@
+{
+	"info": {
+		"_postman_id": "15d2974f-279a-4d80-a3d6-14adff56a1bf",
+		"name": "seminarioMongoDb",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/productos/:id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/5fbe4dbdf4d10a7bb8c467d3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"5fbe4dbdf4d10a7bb8c467d3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/productos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\": \"Papel higienico\",\r\n\t\"descripcion\": \"Papel higienico Scott simple hoja 80mts\",\r\n\t\"costo\": 150.0,\r\n\t\"stock\": 300\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/productos/:id",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"nombre\": \"Papel higienico\",\r\n\t\"descripcion\": \"Papel higienico Scott doble hoja 30mts\",\r\n\t\"costo\": 350,\r\n\t\"stock\": 300\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/productos/5fcb87b945622f6d67c8e44b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"5fcb87b945622f6d67c8e44b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/productos/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/productos/5fcb87b945622f6d67c8e44b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"productos",
+						"5fcb87b945622f6d67c8e44b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ventas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ventas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ventas/:id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ventas/5fcb7fcafe563f34bf891a9d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"5fcb7fcafe563f34bf891a9d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ventas/:id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/ventas/5fcb86ce45622f6d67c8e44a",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas",
+						"5fcb86ce45622f6d67c8e44a"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/ventas",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"productos\": [\r\n\t\t{\r\n\t\t\t\"id\": \"5fbe4dbdf4d10a7bb8c467d3\",\r\n\t\t\t\"cantidad\": 3\r\n\t\t},\r\n\t\t{\r\n\t\t\t\"id\": \"5fbe4dbdf4d10a7bb8c467d6\",\r\n\t\t\t\"cantidad\": 5\r\n\t\t}\r\n\t],\r\n\t\"fecha\": \"2014-10-19T16:00:00.000Z\",\r\n\t\"direccion\": \"Quintana 656\",\r\n\t\"precio\": 1000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/ventas",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ventas"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
