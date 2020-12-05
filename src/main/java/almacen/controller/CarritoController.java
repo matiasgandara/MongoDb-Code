@@ -40,7 +40,6 @@ public class CarritoController {
 	
 	@PostMapping
 	public Carrito newCarrito(@RequestBody Carrito c) {
-		c.getProductos();
 		return repository.save(c);
 	}
 	

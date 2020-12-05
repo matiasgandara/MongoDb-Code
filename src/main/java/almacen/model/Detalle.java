@@ -14,10 +14,8 @@ import lombok.ToString;
 @AllArgsConstructor
 @ToString
 @Getter @Setter
-@Document(collection = "productos")
 public class Detalle {
 	@Id
 	private String id;
 	private int cantidad;
-
 }
