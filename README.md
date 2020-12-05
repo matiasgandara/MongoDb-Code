@@ -7,18 +7,27 @@ Utilizamos conceptos y herramientas aprendidos en este Seminario y en Arquitectu
 ### Spring boot
 Implementamos el backend con Spring Boot. 
 Para levantar el servicio, lo hicimos desde el IDE a través de la ejecución de la clase src.main.java.almacen.AlmacenApp.java.
-El servicio se expone en el puerto 8080 de localhost.
 
 ### Endpoints
-GET /ventas
-POST /ventas
-GET /ventas/:id
-DELETE /ventas/:id
-GET /productos
-POST /productos
-GET /productos/:id
-PUT /productos/:id
-DELETE /productos/:id
+El servicio se expone en el puerto 8080 de localhost.
+> GET /ventas
+>
+> POST /ventas
+>
+> GET /ventas/:id
+>
+> DELETE /ventas/:id
+>
+> GET /productos
+>
+> POST /productos
+>
+> GET /productos/:id
+>
+> PUT /productos/:id
+>
+> DELETE /productos/:id
+>
 
 ### MongoCLI
 [Creacion de base de datos](./cmd/db_commands.md)
